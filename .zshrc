@@ -71,7 +71,7 @@ autoload -Uz +X compinit && compinit
 autoload -Uz +X bashcompinit && bashcompinit
 # source /usr/share/bash-completion/completions/R
 
-source /etc/zsh_command_not_found
+# source /etc/zsh_command_not_found
 # source /usr/share/zsh/site-functions/lfcd.sh
 # source $HOME/.aliases
 # source $ZHOME/aliases.zsh
