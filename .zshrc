@@ -33,6 +33,7 @@ plug zsh-users/zsh-autosuggestions
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 bindkey '^ ' autosuggest-accept
 bindkey '^e' autosuggest-execute
+bindkey '^E' autosuggest-execute # Some terminals can't use '^e'
 bindkey '^I' expand-or-complete-prefix
 
 plug zsh-users/zsh-history-substring-search
