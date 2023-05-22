@@ -3,9 +3,10 @@ then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# In new version it backups this config and substitutes with different one.
 if ! [ -f $HOME/.local/share/zap/zap.zsh ]; then
-  curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh | zsh
+  zsh \
+  <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) \
+  --branch release-v1 --keep
 fi
 source $HOME/.local/share/zap/zap.zsh
 
