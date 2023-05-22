@@ -33,7 +33,7 @@ ZSH_HIGHLIGHT_STYLES[comment]='fg=#777'
 plug zsh-users/zsh-autosuggestions
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 bindkey '^ ' autosuggest-accept
-bindkey '^E' autosuggest-execute # Some terminals can't use '^e'
+bindkey '^e' autosuggest-execute
 bindkey '^I' expand-or-complete-prefix
 
 plug zsh-users/zsh-history-substring-search
@@ -56,8 +56,8 @@ zle -N edit-command-line
 bindkey -M vicmd ' ' edit-command-line
 
 WORDCHARS=${WORDCHARS/\/}
-bindkey '^F' forward-word
-bindkey '^B' backward-word
+bindkey '^f' forward-word
+bindkey '^b' backward-word
 
 bindkey -v
 bindkey '^?' backward-delete-char
