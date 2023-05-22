@@ -74,8 +74,8 @@ autoload -Uz +X bashcompinit && bashcompinit
 # source /etc/zsh_command_not_found
 # source /usr/share/zsh/site-functions/lfcd.sh
 # source $HOME/.aliases
-# source $ZHOME/aliases.zsh
-# source $ZHOME/.p10k.zsh
+source $ZHOME/aliases.zsh
+source $ZHOME/.p10k.zsh
 
 # [ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ] &&
 # source "$SDKMAN_DIR/bin/sdkman-init.sh"
